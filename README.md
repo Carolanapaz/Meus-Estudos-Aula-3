@@ -56,3 +56,35 @@ if (imc < 18.5) {
 } else {
    console.log('Obesidade grave');
 }
+
+---------------------------------------------------------------------
+
+/*Elabore um algoritmo que calcule o que deve ser pago por um produto , considerando o preço normal de etiqueta e a escolha da condição de pagamento.
+Utilize os códigos da tabela a seguir para ler qual a condição de pagamento escolhida e efetuar o calculo adequado.
+Código - CONDIÇÃO DE PAGAMENTO:
+  - À vista débito, recebe 10% de desconto;
+  - À vista no dinheiro ou PIX, recebe 15% de desconto;
+  - Em duas vezes, preço normal da etiqueta sem juros;
+  - Acima de duas vezes, preço normal da etiqueta mais 10% de juros;
+*/
+
+const produto = 20;
+const debito = produto - (produto * 0.1);
+const dinheiro = produto - (produto * 0.15);
+const pix = produto - (produto * 0.15);
+const parcelado2X = produto;
+const parcelado3XouMais = produto + (produto * 0.1);
+
+let condicaoPagamento = debito;
+
+if (condicaoPagamento = debito) {
+    console.log(debito);
+ } else if (condicaoPagamento = dinheiro) {
+    console.log(dinheiro);
+ } else if (condicaoPagamento = pix) {
+    console.log(pix);
+ } else if (condicaoPagamento = parcelado2X) {
+    console.log(parcelado2X);
+ } else if (condicaoPagamento = parcelado3XouMais) {
+    console.log(parcelado3XouMais);
+ }
