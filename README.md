@@ -68,23 +68,23 @@ Código - CONDIÇÃO DE PAGAMENTO:
   - Acima de duas vezes, preço normal da etiqueta mais 10% de juros;
 */
 
-const produto = 20;
-const debito = produto - (produto * 0.1);
-const dinheiro = produto - (produto * 0.15);
-const pix = produto - (produto * 0.15);
-const parcelado2X = produto;
-const parcelado3XouMais = produto + (produto * 0.1);
+const valor = 100;
+const debito = valor - (valor * 0.1);
+const dinheiro = valor - (valor * 0.15);
+const pix = valor - (valor * 0.15);
+const parcelado2X = valor;
+const parcelado3XouMais = (valor * 0.1) + valor;
 
-let condicaoPagamento = debito;
+let condicaoPagamento = pix;
 
-if (condicaoPagamento = debito) {
+if (condicaoPagamento === debito) {
     console.log(debito);
- } else if (condicaoPagamento = dinheiro) {
+ } else if (condicaoPagamento === dinheiro) {
     console.log(dinheiro);
- } else if (condicaoPagamento = pix) {
+ } else if (condicaoPagamento === pix) {
     console.log(pix);
- } else if (condicaoPagamento = parcelado2X) {
+ } else if (condicaoPagamento === parcelado2X) {
     console.log(parcelado2X);
- } else if (condicaoPagamento = parcelado3XouMais) {
+ } else if (condicaoPagamento === parcelado3XouMais) {
     console.log(parcelado3XouMais);
  }
