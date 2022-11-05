@@ -88,3 +88,18 @@ if (condicaoPagamento === debito) {
  } else if (condicaoPagamento === parcelado3XouMais) {
     console.log(parcelado3XouMais);
  }
+ 
+ -------------------------------------------------------------
+ 
+const precoEtiqueta = 500;
+const formaPagamento = 3;
+
+if (formaPagamento === 1) {
+    console.log(precoEtiqueta - (precoEtiqueta * 0.1));
+} else if (formaPagamento === 2) {
+    console.log(precoEtiqueta - (precoEtiqueta * 0.15));
+} else if (formaPagamento === 3) {
+    console.log(precoEtiqueta + (precoEtiqueta * 0.1));
+} else if (formaPagamento === 4) {
+    console.log(precoEtiqueta + (precoEtiqueta * 0.15));
+}
